@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import InputBook from "./components/InputBook";
+import InputScreen from "./components/InputScreen";
+import Flow from "./PLURALSIGHT/Flow";
+import Redux from "./REDUX/Redux";
+import HomeScreen from "./REDUX/HomeSceen";
+import InputAxios from "./PLURALSIGHT/InputAxios";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <InputAxios />
+      {/* <HomeScreen /> */}
+      {/* <Redux /> */}
+      {/* <Flow /> */}
+      {/* <InputBook /> */}
+      {/* <InputScreen /> */}
     </div>
   );
-}
+};
 
 export default App;
